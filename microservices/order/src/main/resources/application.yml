@@ -18,5 +18,5 @@ management:
   otlp:
     metrics:
       export:
-        url: ${OTEL_EXPORTER_OTLP_METRICS_ENDPOINT:signoz-otel-collector.observability:4317}
+        url: ${OTEL_EXPORTER_OTLP_METRICS_ENDPOINT:http://signoz-otel-collector.observability:4317/}
         step: 5s
